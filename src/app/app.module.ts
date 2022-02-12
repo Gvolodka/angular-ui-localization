@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,5 +27,6 @@ const AngularMaterialModules = [
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
+  providers: [{ provide: LOCALE_ID, useValue: 'de-DE' }],
 })
 export class AppModule {}
