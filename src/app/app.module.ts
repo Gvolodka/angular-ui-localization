@@ -43,6 +43,6 @@ const AngularMaterialModules = [
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
-  providers: [LocalizationService],
+  providers: [LocalizationService, { provide: LOCALE_ID, useValue: 'de-DE' }],
 })
 export class AppModule {}

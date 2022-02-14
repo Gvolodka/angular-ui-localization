@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Languages, LANGUAGES_LIST } from './enums/languages.enum';
 
+import { Languages, LANGUAGES_LIST } from './models/languages';
 import { LocalizationService } from './services/localization.service';
 
 @Component({

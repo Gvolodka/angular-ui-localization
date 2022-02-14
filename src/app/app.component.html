@@ -1,7 +1,10 @@
 <div class="container">
   <mat-form-field appearance="fill">
-    <mat-label>Select an option</mat-label>
-    <mat-select [(ngModel)]="selectedLanguage" (ngModelChange)="changeLanguage($event)">
+    <mat-label>{{ 'language_selector_label' | translate }}</mat-label>
+    <mat-select
+      [(ngModel)]="selectedLanguage"
+      (ngModelChange)="changeLanguage($event)"
+    >
       <mat-option
         *ngFor="let language of languagesList"
         [value]="language.code"

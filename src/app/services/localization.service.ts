@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
-import { Languages } from '../enums/languages.enum';
+import { Languages } from '../models/languages';
 
 export const DEFAULT_LANGUAGE: Languages = Languages.En;
 
